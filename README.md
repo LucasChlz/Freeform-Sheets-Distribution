@@ -1,6 +1,6 @@
-# Freeform Sheets — Distribution
+# Sheet Tailor — Distribution
 
-Public distribution repository for **Freeform Sheets**, a Foundry VTT module that makes the character sheet yours: customize the sheet your system already has, or design one from scratch on your own artwork, while everything keeps working.
+Public distribution repository for **Sheet Tailor** (formerly Freeform Sheets), a Foundry VTT module that makes the character sheet yours: customize the sheet your system already has, or design one from scratch on your own artwork, while everything keeps working.
 
 ## Install
 
@@ -9,6 +9,8 @@ In Foundry, open **Add-on Modules → Install Module** and paste this manifest U
 ```text
 https://github.com/LucasChlz/Freeform-Sheets-Distribution/releases/latest/download/module.json
 ```
+
+Already installed as Freeform Sheets? Just update it: the module id is still `freeform-sheets`, so layouts and customizations are kept.
 
 Works on Foundry VTT v13 and v14 (verified 13.351 and 14.369). D&D 5e (dnd5e 5.3 on v13, 6.0 on v14), Pathfinder 2e (7.12 on v13, 8.6 on v14) and FateX (1.5.4) have dedicated support; any other system works through data-path binding.
 
