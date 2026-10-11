@@ -1,0 +1,172 @@
+name: Publish release to Foundry VTT
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: GitHub release tag to register in Foundry (for example, v0.4.0)
+        required: true
+        default: v0.4.0
+        type: string
+      mode:
+        description: Validate only or publish the version to Foundry
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - publish
+
+permissions:
+  contents: read
+
+concurrency:
+  group: foundry-release-${{ github.event.release.tag_name || inputs.tag || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Register package version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Resolve release metadata
+        id: release
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          MANUAL_TAG: ${{ inputs.tag }}
+          MANUAL_MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$EVENT_NAME" == "release" ]]; then
+            tag="$RELEASE_TAG"
+            dry_run="false"
+          else
+            tag="$MANUAL_TAG"
+            if [[ "$MANUAL_MODE" == "publish" ]]; then
+              dry_run="false"
+            else
+              dry_run="true"
+            fi
+          fi
+
+          if [[ -z "$tag" ]]; then
+            echo "A release tag is required." >&2
+            exit 1
+          fi
+
+          version="${tag#v}"
+          if [[ ! "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$ ]]; then
+            echo "The tag '$tag' does not contain a supported semantic version." >&2
+            exit 1
+          fi
+
+          repository_url="https://github.com/${GITHUB_REPOSITORY}"
+          manifest_url="${repository_url}/releases/download/${tag}/module.json"
+          notes_url="${repository_url}/releases/tag/${tag}"
+
+          {
+            echo "tag=$tag"
+            echo "version=$version"
+            echo "manifest_url=$manifest_url"
+            echo "notes_url=$notes_url"
+            echo "dry_run=$dry_run"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Validate release manifest
+        shell: bash
+        env:
+          MANIFEST_URL: ${{ steps.release.outputs.manifest_url }}
+          EXPECTED_VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error "$MANIFEST_URL" --output module.json
+
+          actual_id="$(jq -r '.id // empty' module.json)"
+          actual_version="$(jq -r '.version // empty' module.json)"
+          minimum="$(jq -r '.compatibility.minimum // empty' module.json)"
+          verified="$(jq -r '.compatibility.verified // empty' module.json)"
+
+          [[ "$actual_id" == "freeform-sheets" ]] || {
+            echo "Unexpected package id: $actual_id" >&2
+            exit 1
+          }
+          [[ "$actual_version" == "$EXPECTED_VERSION" ]] || {
+            echo "Manifest version '$actual_version' does not match release '$EXPECTED_VERSION'." >&2
+            exit 1
+          }
+          [[ -n "$minimum" && -n "$verified" ]] || {
+            echo "The manifest must define minimum and verified compatibility versions." >&2
+            exit 1
+          }
+
+          echo "MINIMUM=$minimum" >> "$GITHUB_ENV"
+          echo "VERIFIED=$verified" >> "$GITHUB_ENV"
+
+      - name: Register version with Foundry VTT
+        shell: bash
+        env:
+          FOUNDRY_RELEASE_TOKEN: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}
+          VERSION: ${{ steps.release.outputs.version }}
+          MANIFEST_URL: ${{ steps.release.outputs.manifest_url }}
+          NOTES_URL: ${{ steps.release.outputs.notes_url }}
+          DRY_RUN: ${{ steps.release.outputs.dry_run }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$FOUNDRY_RELEASE_TOKEN" ]]; then
+            echo "Repository secret FOUNDRY_RELEASE_TOKEN is not configured." >&2
+            exit 1
+          fi
+
+          payload="$(jq -n \
+            --arg id "freeform-sheets" \
+            --arg version "$VERSION" \
+            --arg manifest "$MANIFEST_URL" \
+            --arg notes "$NOTES_URL" \
+            --arg minimum "$MINIMUM" \
+            --arg verified "$VERIFIED" \
+            --argjson dryRun "$DRY_RUN" \
+            '{
+              id: $id,
+              "dry-run": $dryRun,
+              release: {
+                version: $version,
+                manifest: $manifest,
+                notes: $notes,
+                compatibility: {
+                  minimum: $minimum,
+                  verified: $verified
+                }
+              }
+            }')"
+
+          status="$(curl \
+            --silent \
+            --show-error \
+            --output foundry-response.json \
+            --write-out '%{http_code}' \
+            --request POST \
+            --header 'Content-Type: application/json' \
+            --header "Authorization: $FOUNDRY_RELEASE_TOKEN" \
+            --data "$payload" \
+            'https://foundryvtt.com/_api/packages/release_version/')"
+
+          cat foundry-response.json
+          echo
+
+          if [[ "$status" -lt 200 || "$status" -ge 300 ]]; then
+            echo "Foundry API returned HTTP $status." >&2
+            exit 1
+          fi
+
+          if [[ "$DRY_RUN" == "true" ]]; then
+            echo "Foundry validation completed without publishing the version."
+          else
+            echo "Foundry package version $VERSION was published successfully."
+          fi
