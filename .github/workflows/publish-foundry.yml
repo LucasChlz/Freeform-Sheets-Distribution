@@ -29,7 +29,7 @@ concurrency:
 jobs:
   publish:
     name: Register package version
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Resolve release metadata
@@ -159,6 +159,11 @@ jobs:
 
           cat foundry-response.json
           echo
+
+          if [[ "$status" == "400" ]] && grep -q "already exists" foundry-response.json; then
+            echo "::warning::Version $VERSION is already registered on the Foundry package page; nothing to do."
+            exit 0
+          fi
 
           if [[ "$status" -lt 200 || "$status" -ge 300 ]]; then
             echo "Foundry API returned HTTP $status." >&2
