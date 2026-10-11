@@ -10,7 +10,7 @@ In Foundry, open **Add-on Modules → Install Module** and paste this manifest U
 https://github.com/LucasChlz/Freeform-Sheets-Distribution/releases/latest/download/module.json
 ```
 
-Requires Foundry VTT v13 (verified 13.351). D&D 5e (dnd5e 5.3), Pathfinder 2e (7.12) and FateX (1.5.4) have dedicated support; any other system works through data-path binding.
+Works on Foundry VTT v13 and v14 (verified 13.351 and 14.369). D&D 5e (dnd5e 5.3 on v13, 6.0 on v14), Pathfinder 2e (7.12 on v13, 8.6 on v14) and FateX (1.5.4) have dedicated support; any other system works through data-path binding.
 
 Release assets contain only the Foundry runtime (`scripts`, `styles`, `lang`), the example layouts with their artwork, `module.json` and `LICENSE`. Development files, tests and internal documentation are not included.
 
