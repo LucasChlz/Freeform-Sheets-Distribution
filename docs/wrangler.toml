@@ -1,0 +1,9 @@
+# Sheet Tailor documentation: a Worker that only serves the built VitePress site.
+# Publish from this folder: npm run build, then wrangler deploy (logged in to Lontra's Cloudflare account).
+name = "sheet-tailor"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./.vitepress/dist"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"

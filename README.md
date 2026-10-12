@@ -2,6 +2,8 @@
 
 Public distribution repository for **Sheet Tailor** (formerly Freeform Sheets), a Foundry VTT module that makes the character sheet yours: customize the sheet your system already has, or design one from scratch on your own artwork, while everything keeps working.
 
+**Documentation:** https://sheet-tailor.lontrathewizard.workers.dev (English and Brazilian Portuguese). Its source is in [`docs/`](docs/).
+
 ## Install
 
 In Foundry, open **Add-on Modules → Install Module** and paste this manifest URL:

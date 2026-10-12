@@ -1,0 +1,37 @@
+{
+  "format": "freeform-sheets.layout",
+  "schema": 1,
+  "module": "freeform-sheets",
+  "system": "fatex",
+  "description": "Demo: every element sits on a box drawn in examples/fatex-demo-sheet.svg. Items are matched by type and name when imported (High Concept, Trouble, Lore, Athletics, Will, Physical, Mental, Mild, Arcane Shield).",
+  "layout": {
+    "schema": 1,
+    "stage": {
+      "width": 1000,
+      "height": 1300,
+      "grid": 2,
+      "background": { "src": "modules/freeform-sheets/examples/fatex-demo-sheet.svg", "fit": "fill", "color": "#141019", "opacity": 1 }
+    },
+    "text": { "fontFamily": "Amiri", "fontSize": 20, "color": "#f3e3bd" },
+    "widgets": [
+      { "id": "name", "type": "field", "label": "Name", "x": 60, "y": 176, "w": 540, "h": 44, "binding": { "source": "actor", "path": "name" }, "style": { "fontSize": 32, "valign": "bottom" } },
+      { "id": "portrait", "type": "image", "label": "Portrait", "x": 702, "y": 72, "w": 236, "h": 236, "style": { "radius": 118 }, "options": { "mode": "portrait", "fit": "cover" } },
+      { "id": "high-concept", "type": "field", "label": "High Concept", "x": 60, "y": 282, "w": 540, "h": 38, "binding": { "source": "item", "itemName": "High Concept", "itemType": "aspect", "path": "system.value" }, "style": { "fontSize": 23, "italic": true, "valign": "bottom" }, "options": { "format": "html" } },
+      { "id": "trouble", "type": "field", "label": "Trouble", "x": 60, "y": 362, "w": 540, "h": 38, "binding": { "source": "item", "itemName": "Trouble", "itemType": "aspect", "path": "system.value" }, "style": { "fontSize": 23, "italic": true, "valign": "bottom" }, "options": { "format": "html" } },
+      { "id": "fate-current", "type": "field", "label": "Fate points", "x": 675, "y": 300, "w": 60, "h": 60, "binding": { "source": "actor", "path": "system.fatepoints.current" }, "style": { "fontSize": 30, "align": "center", "fontWeight": "bold", "color": "#f6d27a" }, "options": { "input": "number" } },
+      { "id": "fate-refresh", "type": "field", "label": "Refresh", "x": 820, "y": 300, "w": 60, "h": 60, "binding": { "source": "actor", "path": "system.fatepoints.refresh" }, "style": { "fontSize": 30, "align": "center", "fontWeight": "bold", "color": "#f6d27a" }, "options": { "input": "number" } },
+      { "id": "skill-1", "type": "roll", "label": "Lore", "x": 60, "y": 474, "w": 410, "h": 34, "binding": { "source": "item", "itemName": "Lore", "itemType": "skill" }, "style": { "fontSize": 22, "valign": "bottom" }, "options": { "mode": "item", "showRank": false, "icon": true } },
+      { "id": "skill-1-rank", "type": "field", "label": "Lore rank", "x": 506, "y": 470, "w": 44, "h": 44, "binding": { "source": "item", "itemName": "Lore", "itemType": "skill", "path": "system.rank" }, "style": { "fontSize": 20, "align": "center", "fontWeight": "bold", "color": "#f6d27a" }, "options": { "input": "number", "signed": true } },
+      { "id": "skill-2", "type": "roll", "label": "Athletics", "x": 60, "y": 534, "w": 410, "h": 34, "binding": { "source": "item", "itemName": "Athletics", "itemType": "skill" }, "style": { "fontSize": 22, "valign": "bottom" }, "options": { "mode": "item", "showRank": false, "icon": true } },
+      { "id": "skill-2-rank", "type": "field", "label": "Athletics rank", "x": 506, "y": 530, "w": 44, "h": 44, "binding": { "source": "item", "itemName": "Athletics", "itemType": "skill", "path": "system.rank" }, "style": { "fontSize": 20, "align": "center", "fontWeight": "bold", "color": "#f6d27a" }, "options": { "input": "number", "signed": true } },
+      { "id": "skill-3", "type": "roll", "label": "Will", "x": 60, "y": 594, "w": 410, "h": 34, "binding": { "source": "item", "itemName": "Will", "itemType": "skill" }, "style": { "fontSize": 22, "valign": "bottom" }, "options": { "mode": "item", "showRank": false, "icon": true } },
+      { "id": "skill-3-rank", "type": "field", "label": "Will rank", "x": 506, "y": 590, "w": 44, "h": 44, "binding": { "source": "item", "itemName": "Will", "itemType": "skill", "path": "system.rank" }, "style": { "fontSize": 20, "align": "center", "fontWeight": "bold", "color": "#f6d27a" }, "options": { "input": "number", "signed": true } },
+      { "id": "stress-physical", "type": "boxes", "label": "Physical stress", "x": 620, "y": 508, "w": 174, "h": 46, "binding": { "source": "item", "itemName": "Physical", "itemType": "stress", "path": "system.value" }, "options": { "gap": 18, "labels": false, "mark": "cross", "markColor": "#e8b04a" } },
+      { "id": "stress-mental", "type": "boxes", "label": "Mental stress", "x": 620, "y": 608, "w": 238, "h": 46, "binding": { "source": "item", "itemName": "Mental", "itemType": "stress", "path": "system.value" }, "options": { "gap": 18, "labels": false, "mark": "cross", "markColor": "#e8b04a" } },
+      { "id": "consequence-mild", "type": "field", "label": "Mild consequence", "x": 634, "y": 756, "w": 292, "h": 48, "binding": { "source": "item", "itemName": "Mild", "itemType": "consequence", "path": "system.value" }, "style": { "fontSize": 20, "italic": true }, "options": { "format": "html", "placeholder": "…" } },
+      { "id": "stunt-name", "type": "roll", "label": "Stunt name", "x": 78, "y": 730, "w": 484, "h": 30, "binding": { "source": "item", "itemName": "Arcane Shield", "itemType": "stunt" }, "style": { "fontSize": 22, "fontWeight": "bold", "color": "#f6d27a" }, "options": { "mode": "item", "showRank": false, "icon": false } },
+      { "id": "stunt-text", "type": "richtext", "label": "Stunt text", "x": 78, "y": 764, "w": 484, "h": 124, "binding": { "source": "item", "itemName": "Arcane Shield", "itemType": "stunt", "path": "system.description" }, "style": { "fontSize": 18, "valign": "top" } },
+      { "id": "backstory", "type": "richtext", "label": "Backstory", "x": 82, "y": 968, "w": 836, "h": 264, "binding": { "source": "actor", "path": "system.biography.value" }, "style": { "fontSize": 19, "valign": "top" } }
+    ]
+  }
+}
