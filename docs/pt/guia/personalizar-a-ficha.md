@@ -27,7 +27,7 @@ No topo ficam **Salvar personalização**, desfazer, refazer e o botão de fecha
 - **Selecionar e mover:** os cliques na ficha selecionam blocos. Nada é rolado nem editado sem querer.
 - **Usar a ficha:** os cliques passam para a ficha, por exemplo para abrir outra aba dela e personalizá-la também.
 
-O painel tem as seções **Bloco selecionado**, **Arte**, **Mudanças**, **Modelos e compartilhamento** e **Teclado e mouse**.
+O painel tem as seções **Bloco selecionado**, **Arte**, **Mudanças**, **Modelos e compartilhamento** e **Teclado e mouse**. No fim ficam os botões **Documentação** e **Discord**.
 
 ![A ficha do FateX com o personalizador aberto ao lado: o bloco de aspectos está selecionado e uma arte de pergaminho aparece por trás](/img/pt/personalizador.png)
 

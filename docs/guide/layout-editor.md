@@ -76,6 +76,7 @@ Style changes made at that moment apply to every selected element.
 | **Background and size** | The page's artwork, size and grid, and the sheet's default text. |
 | **Layers** | Every element of the page, from front to back. |
 | **Layout** | Generate, import, export and clear the layout. |
+| **Documentation** and **Discord** | At the bottom of the panel: open this documentation and the invite to the community on Discord. |
 
 ### Layers
 

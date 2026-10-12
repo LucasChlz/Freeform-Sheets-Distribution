@@ -76,6 +76,7 @@ As mudanças de estilo feitas nesse momento valem para todos os elementos seleci
 | **Fundo e tamanho** | A arte, o tamanho e a grade da página, e o texto padrão da ficha. |
 | **Camadas** | Todos os elementos da página, do que está na frente para o que está atrás. |
 | **Layout** | Gerar, importar, exportar e limpar o layout. |
+| **Documentação** e **Discord** | No fim do painel: abrem esta documentação e o convite para a comunidade no Discord. |
 
 ### Camadas
 

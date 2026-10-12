@@ -4,11 +4,12 @@
 
 As configurações ficam em **Game Settings** → **Configure Settings** → **Sheet Tailor**.
 
-![As configurações do Sheet Tailor: o botão Discord e a opção Quem pode editar o layout das fichas](/img/pt/configuracoes.png)
+![As configurações do Sheet Tailor: os botões Documentação e Discord e a opção Quem pode editar o layout das fichas](/img/pt/configuracoes.png)
 
 | Configuração | O que faz |
 | --- | --- |
 | **Quem pode editar o layout das fichas** | **Donos do ator e Mestres** (padrão): cada jogador monta o layout e personaliza a ficha dos personagens que são dele. **Somente Mestres**: só o Mestre edita; os jogadores usam as fichas normalmente, sem o botão de régua e lápis e sem **Personalizar ficha**. |
+| **Documentação** | Abre esta documentação, em português quando o Foundry está em português e em inglês nos outros idiomas. |
 | **Discord** | Abre o convite para a comunidade no Discord: suporte, novidades e sugestões. |
 
 ## Quem pode fazer o quê

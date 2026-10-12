@@ -4,11 +4,12 @@
 
 The settings are in **Game Settings** → **Configure Settings** → **Sheet Tailor**.
 
-![Sheet Tailor's settings: the Discord button and the Who can edit sheet layouts option](/img/en/configuracoes.png)
+![Sheet Tailor's settings: the Documentation and Discord buttons and the Who can edit sheet layouts option](/img/en/configuracoes.png)
 
 | Setting | What it does |
 | --- | --- |
 | **Who can edit sheet layouts** | **Actor owners and GMs** (default): each player builds the layout and customizes the sheet of the characters they own. **GMs only**: only the GM edits; players use the sheets as usual, without the ruler and pencil button and without **Customize sheet**. |
+| **Documentation** | Opens this documentation, in Portuguese when Foundry runs in Portuguese and in English otherwise. |
 | **Discord** | Opens the invite to the community on Discord: support, news and suggestions. |
 
 ## Who can do what

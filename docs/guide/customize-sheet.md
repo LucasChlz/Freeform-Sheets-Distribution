@@ -27,7 +27,7 @@ At the top are **Save customization**, undo, redo and the close button. Just bel
 - **Select and move:** clicks on the sheet select blocks. Nothing is rolled or edited by accident.
 - **Use the sheet:** clicks go through to the sheet, for example to open another tab of it and customize that one too.
 
-The panel has the sections **Selected block**, **Artwork**, **Changes**, **Templates and sharing** and **Keyboard and mouse**.
+The panel has the sections **Selected block**, **Artwork**, **Changes**, **Templates and sharing** and **Keyboard and mouse**. At the bottom are the **Documentation** and **Discord** buttons.
 
 ![The FateX sheet with the customizer open next to it: the aspects block is selected and a parchment artwork shows behind it](/img/en/personalizador.png)
 

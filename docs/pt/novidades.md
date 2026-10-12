@@ -1,5 +1,10 @@
 # Versões
 
+## 0.4.3
+
+- **Botão Documentação** ao lado do botão do Discord: no fim do editor de layout e do personalizador, e em **Configure Settings** → **Sheet Tailor**. Ele abre esta documentação, em português quando o Foundry está em português.
+- O manifesto do módulo passa a apontar para a documentação, para as versões e para o lugar de relatar problemas.
+
 ## 0.4.2
 
 - **Freeform Sheets agora se chama Sheet Tailor.** Outro módulo do catálogo da Foundry já tinha o nome Freeform Sheets. Só o nome mudou: o identificador continua `freeform-sheets`, então layouts, personalizações, modelos, a API e o endereço de instalação continuam iguais, e basta atualizar.
