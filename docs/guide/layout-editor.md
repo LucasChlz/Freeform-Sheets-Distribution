@@ -75,7 +75,7 @@ Style changes made at that moment apply to every selected element.
 | **Pages** | Create, rename, reorder and delete pages, add ready-made pages and set up the standard sheet tab. See [Pages and backgrounds](/guide/pages-and-backgrounds). |
 | **Background and size** | The page's artwork, size and grid, and the sheet's default text. |
 | **Layers** | Every element of the page, from front to back. |
-| **Layout** | Generate, import, export and clear the layout. |
+| **Layout** | Templates of the world, and generate, import, export and clear the layout. |
 | **Documentation** and **Discord** | At the bottom of the panel: open this documentation and the invite to the community on Discord. |
 
 ### Layers
@@ -90,8 +90,15 @@ On the page, some elements get a badge while you edit:
 
 ### Layout
 
+**Templates** are layouts the GM saved in the world. Pick one under **Template** and click **Apply to this sheet**: the sheet takes its pages and elements, and you save to keep them. The list shows the templates of the world's game system.
+
+**Keep this sheet's artwork when applying a template or importing a layout** comes on: every page keeps the artwork it already has, with its size, and the elements are resized to it by width. Turn it off to take the template's or the file's artwork as well. See [One layout for several characters](/guide/sharing#one-layout-for-several-characters).
+
 | Button | What it does |
 | --- | --- |
+| **Apply to this sheet** | Replaces the layout with the chosen template. You can still undo before saving. |
+| **Delete template** | GM only. Removes the template from the world; sheets that used it keep their layout. |
+| **Save as a template for everyone** | GM only. Saves the layout as it is in the editor as a template of the world. |
 | **Generate the** *system* **sheet** | Replaces the whole layout with a complete, working sheet, with every page. Background images are kept, and you can still undo before saving. |
 | **Import layout…** | Loads a layout from a JSON file. |
 | **Export layout** | Saves the layout to a JSON file. |

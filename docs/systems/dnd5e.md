@@ -82,5 +82,5 @@ The **Sheet data** elements come with these links ready. To link by hand:
 | Legendary actions and resistances (NPC) | `system.resources.legact.value`, `system.resources.legres.value` |
 
 ::: tip Speed on Foundry 14
-On dnd5e 6, the path `system.attributes.movement.walk` only shows the speed. To edit it, use `system.attributes.movement.speeds.walk`.
+dnd5e 6 stores the speed at `system.attributes.movement.speeds.walk`, and that is the path the editor offers there. A field made with the older `system.attributes.movement.walk` still works: Sheet Tailor saves it where dnd5e 6 stores it.
 :::

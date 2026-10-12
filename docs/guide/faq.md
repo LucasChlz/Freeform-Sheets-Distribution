@@ -57,7 +57,17 @@ Every character goes back to the system's normal sheet. Nothing is deleted: when
 
 ## Does Sheet Tailor work with alternative sheets, such as Tidy 5e Sheets?
 
-The customizer works on character sheets in general, but alternative sheets have not been tested one by one yet. If you find a problem, let us know.
+Yes for Tidy 5e Sheets, tested on Foundry 13 and 14: **Customize sheet** works on Tidy's sheets, and when Tidy is the character sheet, the **Standard Sheet** tab shows it, with its edit lock. Other alternative sheets have not been tested one by one yet. If you find a problem, let us know.
+
+## Can several characters share one layout, each with its own artwork?
+
+Yes. The GM saves the layout as a template of the world, and each sheet applies it and keeps its own artwork; the elements are resized to it. See [One layout for several characters](/guide/sharing#one-layout-for-several-characters).
+
+## Can I open the sheet in its own window, on a second screen?
+
+Yes. On Foundry 14, use **Detach Window** in the window's menu (it comes with Foundry). On Foundry 13, use the PopOut! module. The Freeform Sheet, the **Standard Sheet** tab, **Customize sheet** and the layout editor work in that window; the **Customize sheet** panel stays in the main window.
+
+PopOut! does not pop out sheets on Foundry 14: use **Detach Window** there.
 
 ## Where can I get help?
 

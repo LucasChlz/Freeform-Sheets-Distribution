@@ -75,7 +75,7 @@ As mudanças de estilo feitas nesse momento valem para todos os elementos seleci
 | **Páginas** | Criar, renomear, reordenar e excluir páginas, adicionar páginas prontas e configurar a aba da ficha padrão. Veja [Páginas e fundos](/pt/guia/paginas-e-fundos). |
 | **Fundo e tamanho** | A arte, o tamanho e a grade da página, e o texto padrão da ficha. |
 | **Camadas** | Todos os elementos da página, do que está na frente para o que está atrás. |
-| **Layout** | Gerar, importar, exportar e limpar o layout. |
+| **Layout** | Modelos do mundo, e gerar, importar, exportar e limpar o layout. |
 | **Documentação** e **Discord** | No fim do painel: abrem esta documentação e o convite para a comunidade no Discord. |
 
 ### Camadas
@@ -90,8 +90,15 @@ Na página, alguns elementos ganham um selo enquanto você edita:
 
 ### Layout
 
+**Modelos** são layouts que o Mestre salvou no mundo. Escolha um em **Modelo** (*Template*) e clique em **Aplicar nesta ficha** (*Apply to this sheet*): a ficha recebe as páginas e os elementos dele, e você salva para manter. A lista mostra os modelos do sistema de jogo do mundo.
+
+**Manter a arte desta ficha ao aplicar um modelo ou importar um layout** (*Keep this sheet's artwork when applying a template or importing a layout*) vem ligado: cada página fica com a arte que já tem, no tamanho dela, e os elementos se ajustam a ela pela largura. Desligue para receber também a arte do modelo ou do arquivo. Veja [Um layout para vários personagens](/pt/guia/compartilhar#um-layout-para-varios-personagens).
+
 | Botão | O que faz |
 | --- | --- |
+| **Aplicar nesta ficha** | Troca o layout pelo modelo escolhido. Ainda dá para desfazer antes de salvar. |
+| **Excluir modelo** | Só o Mestre. Tira o modelo do mundo; as fichas que o usaram continuam com o layout. |
+| **Salvar como modelo para todos** | Só o Mestre. Salva o layout, como está no editor, como modelo do mundo. |
 | **Gerar a ficha de** *sistema* | Troca o layout inteiro por uma ficha completa e funcional, com todas as páginas. As imagens de fundo são mantidas, e ainda dá para desfazer antes de salvar. |
 | **Importar layout…** | Carrega um layout de um arquivo JSON. |
 | **Exportar layout** | Salva o layout num arquivo JSON. |

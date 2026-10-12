@@ -57,7 +57,17 @@ Cada personagem volta para a ficha normal do sistema. Nada é apagado: quando o 
 
 ## O Sheet Tailor funciona com fichas alternativas, como o Tidy 5e Sheets?
 
-O personalizador funciona em fichas de personagem em geral, mas as fichas alternativas ainda não foram testadas uma a uma. Se encontrar um problema, conte para nós.
+Com o Tidy 5e Sheets, sim, testado no Foundry 13 e no 14: o **Personalizar ficha** funciona nas fichas do Tidy, e quando o Tidy é a ficha de personagem a aba **Ficha padrão** mostra o Tidy, com o cadeado de edição. As outras fichas alternativas ainda não foram testadas uma a uma. Se encontrar um problema, conte para nós.
+
+## Vários personagens podem usar o mesmo layout, cada um com a sua arte?
+
+Podem. O Mestre salva o layout como modelo do mundo, e cada ficha aplica o modelo e fica com a própria arte; os elementos se ajustam a ela. Veja [Um layout para vários personagens](/pt/guia/compartilhar#um-layout-para-varios-personagens).
+
+## Dá para abrir a ficha numa janela separada, em outra tela?
+
+Dá. No Foundry 14, use o **Detach Window** no menu da janela (vem com o Foundry). No Foundry 13, use o módulo PopOut!. A Ficha Livre, a aba **Ficha padrão**, o **Personalizar ficha** e o editor de layout funcionam nessa janela; o painel do **Personalizar ficha** fica na janela principal.
+
+O PopOut! não destaca fichas no Foundry 14: lá, use o **Detach Window**.
 
 ## Onde peço ajuda?
 

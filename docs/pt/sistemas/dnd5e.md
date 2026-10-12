@@ -82,5 +82,5 @@ Os elementos de **Dados da ficha** já trazem estes vínculos prontos. Para liga
 | Ações e resistências lendárias (NPC) | `system.resources.legact.value`, `system.resources.legres.value` |
 
 ::: tip Deslocamento no Foundry 14
-No dnd5e 6, o caminho `system.attributes.movement.walk` só mostra o deslocamento. Para editar, use `system.attributes.movement.speeds.walk`.
+O dnd5e 6 guarda o deslocamento em `system.attributes.movement.speeds.walk`, e é esse o caminho que o editor oferece lá. Um campo feito com o caminho antigo, `system.attributes.movement.walk`, continua funcionando: o Sheet Tailor grava onde o dnd5e 6 guarda.
 :::

@@ -22,6 +22,7 @@ Release assets contain only the Foundry runtime (`scripts`, `styles`, `lang`), t
 
 - **Customize the sheet you already use.** Click **Customize sheet** on the D&D 5e, Pathfinder 2e, FateX or any other system sheet, drag its blocks where you want them, resize or hide them, and put an image, GIF or video behind it. It stays the system's own sheet, so rolls, fields and drag and drop keep working. The GM can save a customization as a template for every player.
 - **Or design a sheet from scratch** on your own artwork: place every field, box track, roll button, portrait and item list exactly where you drew it.
+- **One layout for the whole table.** The GM saves a layout as a template of the world; each player applies it to their own sheet and keeps their own artwork, with the elements resized to it.
 - **Complete from the first click.** A freeform sheet starts with everything the system sheet has, split into pages like its tabs, and the system's own sheet is the last tab of the same window.
 - **D&D 5e:** details, inventory, features, spells, effects and biography pages for characters and NPCs. Checks, saves, skills, initiative, death saves, hit dice, rests, item use and spell slots go through the dnd5e system, and classes dropped on a page go through its advancement.
 - **Pathfinder 2e:** character, actions, spells, inventory, feats, effects and biography pages, with strikes and the multiple attack penalty, spellcasting entries and conditions handled by the PF2e system.
