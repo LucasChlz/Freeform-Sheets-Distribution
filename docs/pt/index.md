@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Sheet Tailor
+title: "Sheet Tailor: Character Sheet Editor"
 titleTemplate: Documentação
 
 hero:

@@ -1,6 +1,6 @@
-# Sheet Tailor — Distribution
+# Sheet Tailor: Character Sheet Editor — Distribution
 
-Public distribution repository for **Sheet Tailor** (formerly Freeform Sheets), a Foundry VTT module that makes the character sheet yours: customize the sheet your system already has, or design one from scratch on your own artwork, while everything keeps working.
+Public distribution repository for **Sheet Tailor: Character Sheet Editor** (formerly Freeform Sheets), a Foundry VTT module that makes the character sheet yours: customize the sheet your system already has, or design one from scratch on your own artwork, while everything keeps working.
 
 **Documentation:** https://sheet-tailor.lontrathewizard.workers.dev (English and Brazilian Portuguese). Its source is in [`docs/`](docs/).
 

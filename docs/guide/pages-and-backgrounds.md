@@ -8,8 +8,8 @@ In the editor, the tabs switch the page being edited, and the **+** next to them
 
 | Control | What it does |
 | --- | --- |
-| Icon on the left | Opens that page for editing. The pencil icon marks the current page. |
-| Name | Renames the tab. Empty, it is called "Page 1", "Page 2" and so on. |
+| Icon on the left | Opens that page for editing. On the page being edited it is a pencil, **Rename the page**: it takes you to the name. |
+| Name | Renames the tab. Empty, it is called "Page 1", "Page 2" and so on. Double-clicking a tab renames it too. |
 | Number | How many elements the page has. |
 | **Move left** / **Move right** | Changes the order of the tabs. |
 | **Delete page** | Deletes the page and its elements. If it has elements, the module asks first. You can still undo before saving. |
@@ -49,11 +49,23 @@ The **Background and size** section applies to the page being edited; its name s
 | Field | What it does |
 | --- | --- |
 | **Image, GIF or video** | Path or address of the artwork. The folder button opens Foundry's file browser; the X removes the artwork. |
-| **Fit** | **Cover** fills the page and crops what is left over; **Contain** shows the whole artwork; **Stretch** stretches it to fit. |
+| **Fit** | **Cover** fills the page and crops what is left over; **Contain** shows the whole artwork; **Stretch** stretches it to fit; **Free (adjusted on the page)** puts it where you placed it with **Adjust on the page**. |
 | **Opacity** | Makes the artwork lighter or stronger. |
+| **Adjust on the page** | Place the artwork by dragging. See below. |
 | **Page color** | Color that shows where the artwork does not cover, or the whole page when there is no artwork. |
 
-When you choose an image, **the page takes the size of the image**. That way, the spaces you drew are exactly where the elements are, and the alignment holds at any window size: the whole page is scaled to fit.
+When you choose an image for an **empty page**, the page takes the size of the image. That way, the spaces you drew are exactly where the elements are, and the alignment holds at any window size: the whole page is scaled to fit. A page that already has elements keeps its size and layout: the artwork covers it, never stretched, and **Match the image size** is one click away.
+
+### Place the artwork by dragging
+
+**Adjust on the page** shows the whole picture, faded where the page cuts it, with handles around it, and the elements step aside meanwhile:
+
+- **Drag the picture** to choose the part that shows, for example the clean side of a texture.
+- **Pull the handles** to resize it, for example to put the borders of a frame on the corners of the page. With <kbd>Shift</kbd>, the proportions are kept.
+- Its edges and center snap to the page's; <kbd>Alt</kbd> turns that off. The arrow keys move it 1 pixel; with <kbd>Shift</kbd>, 10 pixels.
+- <kbd>Esc</kbd>, a double-click or **Finish adjusting** ends it.
+
+The fit becomes **Free (adjusted on the page)**. Choosing another fit keeps the place you gave it, for when you come back to **Free**. A new image with the same proportions (a better copy of the same drawing) keeps the place; another image starts covering the page.
 
 Animated GIFs and WebM or MP4 videos work as backgrounds too. Videos play in a loop, without sound. See [Animated sheets](/guide/animated-sheets).
 
@@ -74,6 +86,8 @@ Grid size in pixels. Elements snap to it when you drag or resize them. **0** tur
 ### Default text
 
 **Font**, **Size** and **Text color** apply to every text element of the sheet, on every page, that has no style of its own. It is the quickest way to change the font of the whole sheet.
+
+**Use this color for every text on the page** takes away the text color of each element of the page, so they all follow **Text color**: on a dark artwork, set it to white and click it once.
 
 ## Tips for the artwork
 

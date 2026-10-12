@@ -89,7 +89,8 @@ Na seção **Arte**:
 | **Imagem, GIF ou vídeo atrás da ficha** | Caminho ou endereço da arte. O botão de pasta abre o navegador de arquivos do Foundry; o X remove a arte. |
 | **Encaixe** | **Cobrir** preenche a janela e corta as sobras; **Conter** mostra a arte inteira; **Esticar** estica para caber. |
 | **Opacidade** | Deixa a arte mais clara ou mais forte. |
-| **Cor atrás da imagem** | Cor que aparece onde a arte não cobre. |
+| **Mover a arte ao rolar a ficha (paralaxe)** | Desligado, a arte fica parada atrás da ficha enquanto você rola uma ficha comprida. Ligado, ela acompanha a rolagem, um pouco mais devagar que a ficha. |
+| **Cor atrás da imagem** | Cor que aparece onde a arte não cobre. O **×** ao lado dela tira a cor. |
 
 A arte preenche a janela por trás de tudo o que a ficha mostra, abaixo da barra de título.
 
@@ -124,7 +125,7 @@ Na seção **Modelos e compartilhamento**:
 - **Salvar como modelo para todos** (só o Mestre): guarda a personalização como um modelo com nome, disponível para a mesa inteira.
 - **Modelo** e **Aplicar nesta ficha**: qualquer dono aplica um modelo na própria ficha. O modelo é copiado, então mudar ou excluir o modelo depois não muda as fichas que já o usaram.
 - **Excluir modelo** (só o Mestre).
-- **Exportar personalização** e **Importar personalização…**: salvam e carregam a personalização num arquivo JSON, para levar a outro mundo ou passar para alguém.
+- **Exportar personalização** e **Importar personalização…**: salvam e carregam a personalização num arquivo JSON, para levar a outro mundo ou passar para alguém. Um layout da Ficha Livre (de **Exportar layout**) não é uma personalização: importado aqui, ele oferece trocar a ficha do personagem para a Ficha Livre com esse layout.
 - **Remover toda a personalização**: volta a ficha a ser exatamente como o sistema desenha. Ainda dá para desfazer antes de salvar.
 
 ## Teclado e mouse

@@ -152,8 +152,8 @@ export default defineConfig({
     root: {
       label: "English",
       lang: "en-US",
-      title: "Sheet Tailor",
-      description: "Documentation of Sheet Tailor, the character sheet module for Foundry VTT.",
+      title: "Sheet Tailor: Character Sheet Editor",
+      description: "Documentation of Sheet Tailor, the character sheet editor for Foundry VTT.",
       themeConfig: {
         nav: [
           { text: "Guide", link: "/guide/getting-started", activeMatch: "^/guide/" },
@@ -173,8 +173,8 @@ export default defineConfig({
       label: "Português",
       lang: "pt-BR",
       link: "/pt/",
-      title: "Sheet Tailor",
-      description: "Documentação do Sheet Tailor, o módulo de fichas para o Foundry VTT.",
+      title: "Sheet Tailor: Character Sheet Editor",
+      description: "Documentação do Sheet Tailor, o editor de fichas para o Foundry VTT.",
       themeConfig: {
         nav: [
           { text: "Guia", link: "/pt/guia/primeiros-passos", activeMatch: "/pt/guia/" },

@@ -80,6 +80,8 @@ In counter mode, clicking a box ticks up to it; clicking the last ticked box unt
 | **Fit** | **Cover**, **Contain** or **Stretch**. |
 | **Image or video** | Fixed image only: the file or address. Videos play in a loop, without sound. |
 
+A new image is a fixed image shown whole (**Contain**): the file browser opens right away, and the box takes the proportions of the file you pick.
+
 In play mode, clicking the portrait opens the file browser to change the character's image. Those who cannot upload files only see the enlarged image.
 
 ## Roll
@@ -141,7 +143,8 @@ The **Style** section changes the look of any element. Elements with text have e
 
 | Box option | What it does |
 | --- | --- |
-| **Background** | Color behind the element. Empty, the element is transparent and shows the art. |
+| **Background** | Color behind the element. Empty, the element is transparent and shows the art. The **×** next to a color field empties it. |
+| **Background opacity** | Fades only the background color, not the text. |
 | **Border** and **Border color** | Thickness and color of the border, in pixels. |
 | **Corner radius** | Rounds the corners. |
 | **Padding** | Space between the border and the content. |

@@ -80,6 +80,8 @@ No modo contador, clicar numa caixa marca até ela; clicar na última caixa marc
 | **Encaixe** | **Cobrir**, **Conter** ou **Esticar**. |
 | **Imagem ou vídeo** | Só para a imagem fixa: o arquivo ou endereço. Vídeos tocam em repetição, sem som. |
 
+Uma imagem nova é uma imagem fixa mostrada inteira (**Conter**): o navegador de arquivos abre na hora, e a caixa assume a proporção do arquivo escolhido.
+
 No modo de jogo, clicar no retrato abre o navegador de arquivos para trocar a imagem do personagem. Quem não pode enviar arquivos só vê a imagem ampliada.
 
 ## Rolagem
@@ -141,7 +143,8 @@ A seção **Estilo** muda a aparência de qualquer elemento. Os elementos com te
 
 | Opção de caixa | O que faz |
 | --- | --- |
-| **Fundo** | Cor atrás do elemento. Vazio, o elemento fica transparente e mostra a arte. |
+| **Fundo** | Cor atrás do elemento. Vazio, o elemento fica transparente e mostra a arte. O **×** ao lado de um campo de cor esvazia o campo. |
+| **Opacidade do fundo** | Apaga só a cor de fundo, não o texto. |
 | **Borda** e **Cor da borda** | Espessura e cor da borda, em pixels. |
 | **Arredondamento** | Arredonda os cantos. |
 | **Margem interna** | Espaço entre a borda e o conteúdo. |

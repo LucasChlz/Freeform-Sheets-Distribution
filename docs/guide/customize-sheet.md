@@ -89,7 +89,8 @@ In the **Artwork** section:
 | **Image, GIF or video behind the sheet** | Path or address of the artwork. The folder button opens Foundry's file browser; the X removes the artwork. |
 | **Fit** | **Cover** fills the window and crops what is left over; **Contain** shows the whole artwork; **Stretch** stretches it to fit. |
 | **Opacity** | Makes the artwork lighter or stronger. |
-| **Color behind the image** | Color that shows where the artwork does not cover. |
+| **Move the artwork as the sheet scrolls (parallax)** | Off, the artwork stays still behind the sheet while you scroll a long sheet. On, it moves along a little slower than the sheet. |
+| **Color behind the image** | Color that shows where the artwork does not cover. The **×** next to it removes it. |
 
 The artwork fills the window behind everything the sheet shows, below the title bar.
 
@@ -124,7 +125,7 @@ In the **Templates and sharing** section:
 - **Save as a template for everyone** (GM only): keeps the customization as a named template, available to the whole table.
 - **Template** and **Apply to this sheet**: any owner applies a template to their own sheet. The template is copied, so changing or deleting it later does not change the sheets that already used it.
 - **Delete template** (GM only).
-- **Export customization** and **Import customization…**: save and load the customization in a JSON file, to take it to another world or hand it to someone.
+- **Export customization** and **Import customization…**: save and load the customization in a JSON file, to take it to another world or hand it to someone. A Freeform Sheet layout (from **Export layout**) is not a customization: imported here, it offers to switch the character to the Freeform Sheet with that layout.
 - **Remove every customization**: the sheet goes back to exactly how the system draws it. You can still undo before saving.
 
 ## Keyboard and mouse
