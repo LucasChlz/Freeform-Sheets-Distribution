@@ -17,7 +17,7 @@ The choice applies to that character only. For every character of a type to use 
 
 ## What comes ready
 
-- **D&D 5e, Pathfinder 2e and FateX:** a complete sheet, split into tabs like the system sheet, with each system's rolls, resources and item lists. The details are in [Systems](/systems/dnd5e).
+- **D&D 5e, Pathfinder 2e, Daggerheart and FateX:** a complete sheet, split into tabs like the system sheet, with each system's rolls, resources and item lists. The details are in [Systems](/systems/dnd5e).
 - **Other systems:** a page with the name and portrait and an **Items** tab with one list per item type. From there, any field of the system can be linked from the editor. See [Other systems](/systems/other).
 
 Every list shows even when it is empty, so items added later show up in the right place. The background artwork is an extra: the sheet works without it.

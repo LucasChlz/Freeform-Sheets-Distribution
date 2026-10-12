@@ -24,7 +24,7 @@ hero:
 features:
   - icon: 🪡
     title: Personalize o que você já usa
-    details: Abra a sua ficha normalmente (D&D 5e, Pathfinder 2e, FateX ou outro sistema), arraste os blocos para onde quiser, mude o tamanho, esconda o que não usa e coloque uma imagem, GIF ou vídeo atrás. Ela continua sendo a ficha do sistema.
+    details: Abra a sua ficha normalmente (D&D 5e, Pathfinder 2e, Daggerheart, FateX ou outro sistema), arraste os blocos para onde quiser, mude o tamanho, esconda o que não usa e coloque uma imagem, GIF ou vídeo atrás. Ela continua sendo a ficha do sistema.
     link: /pt/guia/personalizar-a-ficha
     linkText: Personalizar a ficha do sistema
   - icon: ⚡

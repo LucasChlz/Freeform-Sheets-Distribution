@@ -17,7 +17,7 @@ A escolha vale só para aquele personagem. Para que todos os personagens de um t
 
 ## O que já vem pronto
 
-- **D&D 5e, Pathfinder 2e e FateX:** uma ficha completa, dividida em abas como a ficha do sistema, com as rolagens, os recursos e as listas de itens de cada um. Os detalhes estão em [Sistemas](/pt/sistemas/dnd5e).
+- **D&D 5e, Pathfinder 2e, Daggerheart e FateX:** uma ficha completa, dividida em abas como a ficha do sistema, com as rolagens, os recursos e as listas de itens de cada um. Os detalhes estão em [Sistemas](/pt/sistemas/dnd5e).
 - **Outros sistemas:** uma página com nome e retrato e uma aba **Itens** com uma lista por tipo de item. A partir daí, qualquer campo do sistema pode ser ligado pelo editor. Veja [Outros sistemas](/pt/sistemas/outros).
 
 Toda lista aparece mesmo vazia, para que os itens adicionados depois apareçam no lugar certo. A arte de fundo é um extra: a ficha funciona sem ela.

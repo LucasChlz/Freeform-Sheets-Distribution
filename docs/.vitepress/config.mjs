@@ -34,6 +34,7 @@ const sidebarPt = [
     items: [
       { text: "D&D 5e", link: "/pt/sistemas/dnd5e" },
       { text: "Pathfinder 2e", link: "/pt/sistemas/pf2e" },
+      { text: "Daggerheart", link: "/pt/sistemas/daggerheart" },
       { text: "FateX", link: "/pt/sistemas/fatex" },
       { text: "Outros sistemas", link: "/pt/sistemas/outros" }
     ]
@@ -86,6 +87,7 @@ const sidebarEn = [
     items: [
       { text: "D&D 5e", link: "/systems/dnd5e" },
       { text: "Pathfinder 2e", link: "/systems/pf2e" },
+      { text: "Daggerheart", link: "/systems/daggerheart" },
       { text: "FateX", link: "/systems/fatex" },
       { text: "Other systems", link: "/systems/other" }
     ]

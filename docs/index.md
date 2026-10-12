@@ -24,7 +24,7 @@ hero:
 features:
   - icon: 🪡
     title: Customize what you're already used to
-    details: Open your sheet as usual (D&D 5e, Pathfinder 2e, FateX or another system), drag its blocks wherever you want, change their size, hide what you don't use and put an image, GIF or video behind it. It is still the system's sheet.
+    details: Open your sheet as usual (D&D 5e, Pathfinder 2e, Daggerheart, FateX or another system), drag its blocks wherever you want, change their size, hide what you don't use and put an image, GIF or video behind it. It is still the system's sheet.
     link: /guide/customize-sheet
     linkText: Customize the system's sheet
   - icon: ⚡

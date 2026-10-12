@@ -1,6 +1,6 @@
 # System adapters
 
-Sheet Tailor's core (editor, elements, links) knows no system. Everything specific to a system lives in an **adapter**: the path suggestions, the rolls, the item lists, the generated sheet. D&D 5e, Pathfinder 2e and FateX are adapters; any other system uses the generic adapter.
+Sheet Tailor's core (editor, elements, links) knows no system. Everything specific to a system lives in an **adapter**: the path suggestions, the rolls, the item lists, the generated sheet. D&D 5e, Pathfinder 2e, Daggerheart and FateX are adapters; any other system uses the generic adapter.
 
 Another module, or the system itself, can register an adapter without changing Sheet Tailor.
 

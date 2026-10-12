@@ -1,5 +1,9 @@
 # Versões
 
+## 0.7.0
+
+- **Suporte ao Daggerheart** (o sistema da Foundryborne, 2.x no Foundry 14 e 1.9 no Foundry 13), para personagens, adversários e companheiros. A Ficha Livre já vem completa, com as abas da ficha do Daggerheart: atributos com as rolagens, Evasão, valor e espaços de armadura, limiares de dano, Pontos de Vida, Estresse, Esperança, experiências, ataques, descansos, o movimento de morte e as condições; habilidades agrupadas como na ficha do Daggerheart; as cartas em uso e o cofre; inventário e biografia. Toda rolagem é a rolagem de dualidade do Daggerheart, com Esperança e Medo, e os itens são usados do jeito do Daggerheart. O **Personalizar ficha** também funciona nas fichas do Daggerheart. Veja [Daggerheart](/pt/sistemas/daggerheart).
+
 ## 0.6.0
 
 O pacote agora se chama **Sheet Tailor: Character Sheet Editor**, para quem procura "sheet editor" ou "character sheet" encontrar. Só o título muda: o identificador, os layouts, as personalizações e o endereço do manifesto continuam iguais.

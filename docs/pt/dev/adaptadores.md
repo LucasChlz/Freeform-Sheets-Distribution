@@ -1,6 +1,6 @@
 # Adaptadores de sistema
 
-O núcleo do Sheet Tailor (editor, elementos, vínculos) não conhece nenhum sistema. Tudo o que é específico de um sistema fica num **adaptador**: as sugestões de caminhos, as rolagens, as listas de itens, a ficha gerada. O D&D 5e, o Pathfinder 2e e o FateX são adaptadores; qualquer outro sistema usa o adaptador genérico.
+O núcleo do Sheet Tailor (editor, elementos, vínculos) não conhece nenhum sistema. Tudo o que é específico de um sistema fica num **adaptador**: as sugestões de caminhos, as rolagens, as listas de itens, a ficha gerada. O D&D 5e, o Pathfinder 2e, o Daggerheart e o FateX são adaptadores; qualquer outro sistema usa o adaptador genérico.
 
 Outro módulo, ou o próprio sistema, pode registrar um adaptador sem mexer no Sheet Tailor.
 

@@ -1,5 +1,9 @@
 # Versions
 
+## 0.7.0
+
+- **Daggerheart support** (the Foundryborne system, 2.x on Foundry 14 and 1.9 on Foundry 13), for characters, adversaries and companions. The Freeform Sheet comes complete, with the tabs of the Daggerheart sheet: traits with their rolls, Evasion, armor score and Armor Slots, damage thresholds, Hit Points, Stress, Hope, experiences, attacks, rests, the death move and conditions; features grouped like the Daggerheart sheet; the loadout and the vault; inventory and biography. Every roll is the Daggerheart duality roll with Hope and Fear, and items are used the Daggerheart way. **Customize sheet** works on the Daggerheart sheets too. See [Daggerheart](/systems/daggerheart).
+
 ## 0.6.0
 
 The package is now titled **Sheet Tailor: Character Sheet Editor**, so searching for "sheet editor" or "character sheet" finds it. Only the title changes: the id, layouts, customizations and the manifest URL stay the same.

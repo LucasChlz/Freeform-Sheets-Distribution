@@ -20,7 +20,7 @@ Release assets contain only the Foundry runtime (`scripts`, `styles`, `lang`), t
 
 ## Features
 
-- **Customize the sheet you already use.** Click **Customize sheet** on the D&D 5e, Pathfinder 2e, FateX or any other system sheet, drag its blocks where you want them, resize or hide them, and put an image, GIF or video behind it. It stays the system's own sheet, so rolls, fields and drag and drop keep working. The GM can save a customization as a template for every player.
+- **Customize the sheet you already use.** Click **Customize sheet** on the D&D 5e, Pathfinder 2e, Daggerheart, FateX or any other system sheet, drag its blocks where you want them, resize or hide them, and put an image, GIF or video behind it. It stays the system's own sheet, so rolls, fields and drag and drop keep working. The GM can save a customization as a template for every player.
 - **Or design a sheet from scratch** on your own artwork: place every field, box track, roll button, portrait and item list exactly where you drew it.
 - **One layout for the whole table.** The GM saves a layout as a template of the world; each player applies it to their own sheet and keeps their own artwork, with the elements resized to it.
 - **Complete from the first click.** A freeform sheet starts with everything the system sheet has, split into pages like its tabs, and the system's own sheet is the last tab of the same window.
@@ -43,4 +43,4 @@ Issues for the distributed module can be reported in this repository.
 
 ## License
 
-MIT. The D&D 5e, Pathfinder 2e and FateX systems are © their authors; this module only calls their public functions and ships none of their content.
+MIT. The D&D 5e, Pathfinder 2e, Daggerheart and FateX systems are © their authors; this module only calls their public functions and ships none of their content.
