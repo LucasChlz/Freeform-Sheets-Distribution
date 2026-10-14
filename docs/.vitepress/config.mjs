@@ -5,6 +5,10 @@ import { defineConfig } from "vitepress";
 
 const REPO = "https://github.com/LucasChlz/Freeform-Sheets-Distribution";
 const DISCORD = "https://discord.gg/BtCGmbGEWR";
+// The Lontra the Wizard website (all the modules); the same link as the Website badge on the Foundry page.
+const SITE = "https://www.lontrathewizard.workers.dev";
+// The site's four-point star (its favicon), for the icon next to Discord and GitHub.
+const STAR = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="currentColor" d="M32 4l7 21 21 7-21 7-7 21-7-21-21-7 21-7z"/></svg>';
 const BASE = "/";
 
 const sidebarPt = [
@@ -127,7 +131,8 @@ export default defineConfig({
     i18nRouting: false,
     socialLinks: [
       { icon: "discord", link: DISCORD },
-      { icon: "github", link: REPO }
+      { icon: "github", link: REPO },
+      { icon: { svg: STAR }, link: SITE, ariaLabel: "Lontra the Wizard" }
     ],
     search: {
       provider: "local",
@@ -161,12 +166,13 @@ export default defineConfig({
           { text: "Guide", link: "/guide/getting-started", activeMatch: "^/guide/" },
           { text: "Systems", link: "/systems/dnd5e", activeMatch: "^/systems/" },
           { text: "Developers", link: "/dev/api", activeMatch: "^/dev/" },
-          { text: "Versions", link: "/changelog" }
+          { text: "Versions", link: "/changelog" },
+          { text: "Lontra the Wizard", link: SITE, target: "_blank", rel: "noopener" }
         ],
         sidebar: { "/guide/": sidebarEn, "/systems/": sidebarEn, "/dev/": sidebarEn, "/changelog": sidebarEn },
         outline: { level: [2, 3], label: "On this page" },
         footer: {
-          message: "Sheet Tailor is free. Made by Lontra the Wizard.",
+          message: `Sheet Tailor is free. Made by <a href="${SITE}" target="_blank" rel="noopener">Lontra the Wizard</a>.`,
           copyright: "MIT License"
         }
       }
@@ -182,7 +188,8 @@ export default defineConfig({
           { text: "Guia", link: "/pt/guia/primeiros-passos", activeMatch: "/pt/guia/" },
           { text: "Sistemas", link: "/pt/sistemas/dnd5e", activeMatch: "/pt/sistemas/" },
           { text: "Desenvolvedores", link: "/pt/dev/api", activeMatch: "/pt/dev/" },
-          { text: "Versões", link: "/pt/novidades" }
+          { text: "Versões", link: "/pt/novidades" },
+          { text: "Lontra the Wizard", link: SITE, target: "_blank", rel: "noopener" }
         ],
         sidebar: { "/pt/": sidebarPt },
         outline: { level: [2, 3], label: "Nesta página" },
@@ -201,7 +208,7 @@ export default defineConfig({
           linkText: "Voltar ao início"
         },
         footer: {
-          message: "Sheet Tailor é gratuito. Feito por Lontra the Wizard.",
+          message: `Sheet Tailor é gratuito. Feito por <a href="${SITE}" target="_blank" rel="noopener">Lontra the Wizard</a>.`,
           copyright: "Licença MIT"
         }
       }

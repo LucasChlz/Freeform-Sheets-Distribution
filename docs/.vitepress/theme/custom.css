@@ -72,3 +72,11 @@
   font-size: 13px;
   color: var(--vp-c-text-2);
 }
+
+/* The "Lontra the Wizard" link of the top bar needs room: from 768 to 1099 px it would push the bar wider than the
+   window, so there it stays in the "…" menu (the star icon) and, under 768 px, in the mobile menu. */
+@media (max-width: 1099px) {
+  .VPNavBarMenuLink[href^="https://www.lontrathewizard.workers.dev"] {
+    display: none;
+  }
+}
